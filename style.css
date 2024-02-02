@@ -1,0 +1,191 @@
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+
+.overlay {
+  opacity: 0;
+  z-index: 2;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: hsla(178, 100%, 50%, 0.533);
+  cursor: pointer;
+  transition: opacity 400ms ease-in-out;
+}
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.master-container {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+h2 {
+  font-family: Outfit, sans-serif;
+  color: hsl(0, 0%, 100%);
+  transition: 200ms ease-in-out;
+}
+p {
+  font-family: Outfit, sans-serif;
+  color: hsl(215, 51%, 70%);
+}
+
+h2:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+p {
+  font-size: 18px;
+  font-weight: 300;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: hsl(216, 50%, 16%);
+  width: 290px;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 8px 8px 10px -4px rgba(0, 0, 0, 0.263);
+}
+.image-container {
+  height: 290px;
+  width: 290px;
+  position: relative;
+}
+.image-container > img {
+  border-radius: 12px;
+}
+
+hr {
+  border: 1px solid hsl(215, 32%, 27%);
+  /* border-color: hsl(215, 32%, 27%); */
+  width: 100%;
+}
+
+.small-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 70px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.price > p {
+  font-weight: 600;
+  color: hsl(178, 100%, 50%);
+}
+
+.expiry > p {
+  color: hsl(215, 51%, 70%);
+}
+
+.expiry {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.author-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.author-container > img {
+  border: 1px solid white;
+  border-radius: 32px;
+}
+
+.author {
+  transition: 200ms ease-in-out;
+  color: white;
+}
+
+.author:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.author-text {
+  display: flex;
+  flex-direction: row;
+  column-gap: 6px;
+}
+
+/* .attribution {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  align-self: center;
+  color: white;
+  font-family: outfit, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+/* <style>
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600 */
